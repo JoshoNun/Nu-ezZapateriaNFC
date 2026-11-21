@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¡Gracias por tu visita! | Nunez Zapatería</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+  /* Cambia estos colores para ajustarlos al tono exacto de tu logo */
+  :root {
+    --rojo: #C8102E;
+    --rojo-oscuro: #9E0C24;
+    --blanco: #FFFFFF;
+    --fondo: #F6F1F1;
+    --texto: #2B2B2B;
+    --texto-suave: #6B6B6B;
+    --borde: #E8DCDC;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'DM Sans', Arial, sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+  }
+  .card {
+    width: 100%;
+    max-width: 440px;
+    background: var(--blanco);
+    border: 1px solid var(--borde);
+    border-top: 6px solid var(--rojo);
+    border-radius: 24px;
+    padding: 36px 28px 28px;
+    text-align: center;
+    box-shadow: 0 12px 40px rgba(200, 16, 46, 0.12);
+  }
+  .logo {
+    width: 120px;
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto 18px;
+    display: block;
+  }
+  .sucursal {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--rojo);
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 34px;
+    line-height: 1.15;
+    color: var(--texto);
+    margin-bottom: 12px;
+  }
+  .subtitulo {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--texto-suave);
+    margin-bottom: 26px;
+  }
+  .btn-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: var(--rojo);
+    color: var(--blanco);
+    text-decoration: none;
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 28px;
+    transition: background .2s, transform .2s;
+  }
+  .btn-principal:hover { background: var(--rojo-oscuro); transform: translateY(-2px); }
+  .btn-principal .texto { text-align: center; }
+  .btn-principal strong { display: block; font-size: 17px; }
+  .btn-principal small { font-size: 12px; opacity: .9; }
+  .seccion {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--texto-suave);
+    margin-bottom: 12px;
+  }
+  .links { display: flex; flex-direction: column; gap: 12px; }
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: var(--texto);
+    background: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+    padding: 16px 18px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: border-color .2s, background .2s, transform .2s;
+  }
+  .link:hover { border-color: var(--rojo); background: #FFF5F6; transform: translateY(-2px); }
+  .link .icono { width: 22px; text-align: center; color: var(--rojo); font-size: 18px; }
+  .link .flecha { margin-left: auto; color: var(--rojo); font-size: 18px; }
+  .link span.nombre { text-align: left; }
+  .direccion {
+    margin-top: 22px;
+    font-size: 13px;
+    color: var(--texto-suave);
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <img class="logo" src="logo.png" alt="Logotipo de Nunez Zapatería">
+
+    <p class="sucursal">5 de Mayo esq con Hidalgo</p>
+    <h1>¡Gracias por tu visita!</h1>
+    <p class="subtitulo">Tu opinión nos ayuda a seguir mejorando. Cuéntanos cómo fue tu experiencia en esta sucursal.</p>
+
+    <a class="btn-principal" target="_blank" rel="noopener"
+       href="https://search.google.com/local/writereview?placeid=ChIJYQs6R1HVz4URt5R_xyEX9sM">
+      <span aria-hidden="true">★</span>
+      <span class="texto">
+        <strong>Déjanos una reseña en Google</strong>
+        <small>Comparte tu experiencia honestamente</small>
+      </span>
+      <span aria-hidden="true">↗</span>
+    </a>
+
+    <p class="seccion">Síguenos y conéctate</p>
+    <nav class="links">
+      <a class="link" target="_blank" rel="noopener" href="https://www.facebook.com/NunezZapateria">
+        <span class="icono">f</span><span class="nombre">Facebook</span><span class="flecha">↗</span>
+      </a>
+      <a class="link" target="_blank" rel="noopener" href="https://www.instagram.com/nunez.zapateria">
+        <span class="icono">◎</span><span class="nombre">Instagram</span><span class="flecha">↗</span>
+      </a>
+      <!-- Reemplaza 52XXXXXXXXXX con el número de WhatsApp (código de país + número, sin espacios ni +) -->
+      <a class="link" target="_blank" rel="noopener" href="https://wa.me/522481648946">
+        <span class="icono">✆</span><span class="nombre">WhatsApp</span><span class="flecha">↗</span>
+      </a>
+      <a class="link" target="_blank" rel="noopener" href="https://maps.app.goo.gl/xrLWbcBr8tt8b2QCA">
+        <span class="icono">⌖</span><span class="nombre">Cómo llegar a esta sucursal</span><span class="flecha">↗</span>
+      </a>
+    </nav>
+
+    <p class="direccion">Escribe aquí la dirección de la sucursal</p>
+  </main>
+</body>
+</html>
